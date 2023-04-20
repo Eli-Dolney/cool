@@ -21,12 +21,41 @@ body {
     overflow: hidden;
 }
 
+.header-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: calc(100vh / 12);
+    background-color: rbg(107, 91, 149);
+    z-index: 100;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    padding: 0 20px;
+}
+
+.header-container h1 {
+    color: #fff;
+    margin: 0;
+    
+}
+
+
 .screen-container {
+    padding-top: calc(100vh / 12);
     display: flex;
     flex-wrap: wrap; /* This will make the screens wrap to the next row on smaller screens */
     justify-content: center; /* Centers the screens horizontally */
     gap: 20px; /* Add space between screens */
-  }
+}
 
 .screen {
     width: 500px;
@@ -104,7 +133,7 @@ body {
     }
   
     20.0001% { /* -- View 2 -- */
-      background-position: 45% 35%;
+      background-position: 45% 3%;
       background-size: 200%;
     }
   
@@ -169,7 +198,7 @@ body {
     top: 0px;
     background-size: 300%;
     background-position: 0% 0%;
-    filter: sepia(100%) hue-rotate(160deg);
+    filter: sepia(100%) hue-rotate(20deg);
     opacity: 0.6;
     animation: pan-image 15s linear infinite;
   }
